@@ -55,3 +55,13 @@ def prediksi():
         VALUES (?, ?, ?, ?, ?, ?)
         """, (nama, usia, gula, bmi, riwayat, hasil))
         conn.commit()
+
+        # Warna teks hasil prediksi
+        warna = {
+            "Rendah": "green",
+            "Waspada": "blue",
+            "Sedang": "orange",
+            "Tinggi": "red",
+            "Sangat Tinggi": "darkred"
+        }
+        hasil_label.config(text="Hasil: " + hasil, fg=warna[hasil])
