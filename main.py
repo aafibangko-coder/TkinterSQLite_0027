@@ -71,3 +71,9 @@ def prediksi():
     except ValueError:
         messagebox.showerror("Error", "Periksa kembali semua input! Pastikan semua kolom terisi dan usia, gula darah, serta BMI berupa angka.")
 
+
+def lihat_data():
+    # Membuat jendela baru (Toplevel)
+    jendela_data = tk.Toplevel(root)
+    jendela_data.title("Data Riwayat Pasien")
+    jendela_data.geometry("680x350")
