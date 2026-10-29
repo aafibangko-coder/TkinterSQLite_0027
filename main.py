@@ -65,3 +65,5 @@ def prediksi():
             "Sangat Tinggi": "darkred"
         }
         hasil_label.config(text="Hasil: " + hasil, fg=warna[hasil])
+        
+        messagebox.showinfo("Sukses", "Data berhasil disimpan dan diprediksi!")
